@@ -1,5 +1,8 @@
+body {
+    background-color: #0d1d2d;
+}
+
 .map {
-    /* background-color: #0d1d2d; */
     /* background-image: url("https://raw.githubusercontent.com/solodev/clickable-map-overlay/master/images/background.png"); */
     background-position: center;
     background-repeat: repeat;
@@ -59,32 +62,32 @@ a.btn::before {
 
 /* New Map */
 .map button.btn.pop.lunarxp-launch-site, .map a.btn.pop.lunarxp-launch-site {
-    left: 90px;
-    top: 255px;
-}
-.map button.btn.pop.lunarxp-control-center, .map a.btn.pop.lunarxp-control-center {
-    left: 130px;
+    left: 110px;
     top: 15px;
 }
+.map button.btn.pop.lunarxp-control-center, .map a.btn.pop.lunarxp-control-center {
+    left: 62px;
+    top: 228px;
+}
 .map button.btn.pop.lunarxp-rocket-factory, .map a.btn.pop.lunarxp-rocket-factory {
-    left: 125px;
-    top: 90px;
+    left: 100px;
+    top: 78px;
 }
 .map button.btn.pop.lunarxp-colony-xp-1, .map a.btn.pop.lunarxp-colony-xp-1 {
-    left: 540px;
+    left: 450px;
     bottom: 122px;
 }
 .map button.btn.pop.lunarxp-colony-hab-1, .map a.btn.pop.lunarxp-colony-hab-1 {
-    right: 425px;
+    right: 365px;
     top: 245px;
 }
 .map button.btn.pop.lunarxp-colony-orbiter-1, .map a.btn.pop.lunarxp-colony-orbiter-1 {
-    right: 170px;
-    top: 140px;
+    right: 140px;
+    top: 135px;
 }
 .map button.btn.pop.lunar-xplorer, .map a.btn.pop.lunar-xplorer {
-    right: 25%;
-    bottom: 30%;
+    right: 230px;
+    bottom: 180px;
 }
 .map button.btn.pop.florida, .map a.btn.pop.florida {
     right: 195px;
@@ -100,6 +103,10 @@ a.btn.florida {
     background-image: url("https://raw.githubusercontent.com/solodev/clickable-map-overlay/master/images/solodev-logo.png");
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.florida {
+    transform: scale(1.1);
 }
 
 .map {
@@ -159,4 +166,26 @@ a.btn.florida {
     height: 100%;
     width: 968px;
     /* transform: scale(.7); */
+}
+
+.para {
+    display: none;
+    margin: 10px;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+
+@media (max-width: 910px) {
+    .para {
+        display: block;
+    }
+}
+
+
+@media (max-width: 610px) {
+    .para {
+        margin: 30px;
+        font-size: 4rem;
+    }
 }
