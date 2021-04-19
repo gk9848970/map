@@ -1,0 +1,162 @@
+.map {
+    /* background-color: #0d1d2d; */
+    /* background-image: url("https://raw.githubusercontent.com/solodev/clickable-map-overlay/master/images/background.png"); */
+    background-position: center;
+    background-repeat: repeat;
+    position: relative;
+    background-attachment: fixed;
+}
+
+a.btn::before {
+    font-family: FontAwesome;
+    content: "\f041";
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.map img {
+    position: relative;
+    z-index: 3;
+}
+.map button.btn.pop, .map a.btn.pop {
+    z-index: 5;
+    position: absolute;
+    color: #23303f;
+    min-width: 0;
+}
+
+@media (max-width: 575.98px) {
+    .map button.btn.pop, .map a.btn.pop {
+        font-size: 2rem;
+   }
+}
+
+@media (min-width: 576px) {
+    .map button.btn.pop, .map a.btn.pop {
+        font-size: 2rem;
+   }
+}
+.map button.btn.pop:focus, .map a.btn.pop:focus {
+    box-shadow: unset;
+    outline: 0;
+    border: 0;
+}
+.map button.btn.pop.default-popup, .map a.btn.pop.default-popup {
+    display: none;
+}
+
+/* @media (max-width: 767.98px) {
+    .map button.btn.pop.default-popup, .map a.btn.pop.default-popup {
+        bottom: 30%;
+   }
+}
+
+@media (min-width: 768px) {
+    .map button.btn.pop.default-popup, .map a.btn.pop.default-popup {
+        top: 30%;
+   }
+} */
+
+/* New Map */
+.map button.btn.pop.lunarxp-launch-site, .map a.btn.pop.lunarxp-launch-site {
+    left: 90px;
+    top: 255px;
+}
+.map button.btn.pop.lunarxp-control-center, .map a.btn.pop.lunarxp-control-center {
+    left: 130px;
+    top: 15px;
+}
+.map button.btn.pop.lunarxp-rocket-factory, .map a.btn.pop.lunarxp-rocket-factory {
+    left: 125px;
+    top: 90px;
+}
+.map button.btn.pop.lunarxp-colony-xp-1, .map a.btn.pop.lunarxp-colony-xp-1 {
+    left: 540px;
+    bottom: 122px;
+}
+.map button.btn.pop.lunarxp-colony-hab-1, .map a.btn.pop.lunarxp-colony-hab-1 {
+    right: 425px;
+    top: 245px;
+}
+.map button.btn.pop.lunarxp-colony-orbiter-1, .map a.btn.pop.lunarxp-colony-orbiter-1 {
+    right: 170px;
+    top: 140px;
+}
+.map button.btn.pop.lunar-xplorer, .map a.btn.pop.lunar-xplorer {
+    right: 25%;
+    bottom: 30%;
+}
+.map button.btn.pop.florida, .map a.btn.pop.florida {
+    right: 195px;
+    bottom: 110px;
+    padding: 10px 44px;
+}
+
+a.btn.florida::before {
+    content: none;
+}
+
+a.btn.florida {
+    background-image: url("https://raw.githubusercontent.com/solodev/clickable-map-overlay/master/images/solodev-logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.map {
+    height: 600px
+}
+
+.container {
+    width: 960px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    width: 968px;
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+.col-sm-12 {
+    width: 968px;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 576px) {
+    .col-sm-12 {
+        width: 960px;
+    }
+}
+
+.img__div {
+    height: 600px;
+    width: 968px;
+    position: relative;
+}
+
+.imgsize-fix {
+    height: 100%;
+    width: 968px;
+    /* transform: scale(.7); */
+}
